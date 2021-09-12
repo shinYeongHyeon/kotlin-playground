@@ -1,5 +1,7 @@
 package helloWorld
 
-fun main() {
-    println("Hello World")
+public class HelloWorld {
+    fun main(): String {
+        return "Hello World"
+    }
 }
