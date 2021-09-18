@@ -27,4 +27,11 @@ class GreatestCommonDivisorTest {
             this.greatestCommonDivisor?.exec(0, 1)
         }
     }
+
+    @Test
+    fun throwErrorIfFirstIntegerWasNegative() {
+        Assertions.assertThrows(IllegalArgumentException::class.java, ) {
+            this.greatestCommonDivisor?.exec(-1, 1)
+        }
+    }
 }
