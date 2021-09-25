@@ -22,6 +22,13 @@ class GreatestCommonDivisorTest {
     }
 
     @Test
+    fun returnGreatestCommonFactor() {
+        val greatestCommonFactor = this.greatestCommonDivisor?.exec(2, 4)
+
+        assertEquals(2, greatestCommonFactor)
+    }
+
+    @Test
     fun throwErrorIfFirstIntegerWasZero() {
         Assertions.assertThrows(IllegalArgumentException::class.java, ) {
             this.greatestCommonDivisor?.exec(0, 1)
