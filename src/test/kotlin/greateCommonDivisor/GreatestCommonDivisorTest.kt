@@ -23,9 +23,11 @@ class GreatestCommonDivisorTest {
 
     @Test
     fun returnGreatestCommonFactor() {
-        val greatestCommonFactor = this.greatestCommonDivisor?.exec(2, 4)
+        val greatestCommonFactorOf2And4 = this.greatestCommonDivisor?.exec(2, 4)
+        val greatestCommonFactorOf6and15 = this.greatestCommonDivisor?.exec(6, 15)
 
-        assertEquals(2, greatestCommonFactor)
+        assertEquals(2, greatestCommonFactorOf2And4)
+        assertEquals(3, greatestCommonFactorOf6and15)
     }
 
     @Test
