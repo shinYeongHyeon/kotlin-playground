@@ -31,6 +31,15 @@ class GreatestCommonDivisorTest {
     }
 
     @Test
+    fun returnGreatestCommonFactorWhenFirstArgumentWasBiggerThanSecondArgument() {
+        val greatestCommonFactorOf86And34 = this.greatestCommonDivisor?.exec(86, 34)
+        val greatestCommonFactorOf192952and12 = this.greatestCommonDivisor?.exec(192952, 12)
+
+        assertEquals(2, greatestCommonFactorOf86And34)
+        assertEquals(4, greatestCommonFactorOf192952and12)
+    }
+
+    @Test
     fun throwErrorIfFirstIntegerWasZero() {
         Assertions.assertThrows(IllegalArgumentException::class.java, ) {
             this.greatestCommonDivisor?.exec(0, 1)
